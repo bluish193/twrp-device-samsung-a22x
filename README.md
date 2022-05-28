@@ -1,3 +1,3 @@
 TWRP Device Tree for the Samsung Galaxy A22X 5G 
 
-[![Building recovery](https://github.com/aHVzY2g/android-device-samsung-a22x/actions/workflows/recovery.yml/badge.svg)](https://github.com/aHVzY2g/android-device-samsung-a22x/actions/workflows/recovery.yml)
+[![Make A22 5G (MediaTek) TWRP Recovery](https://github.com/aHVzY2g/twrp-device-samsung-a22x/actions/workflows/release.yml/badge.svg)](https://github.com/aHVzY2g/twrp-device-samsung-a22x/actions/workflows/release.yml)
