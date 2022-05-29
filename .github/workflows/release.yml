@@ -22,7 +22,7 @@ on:
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'git-ci'
+        default: 'twrp-11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
