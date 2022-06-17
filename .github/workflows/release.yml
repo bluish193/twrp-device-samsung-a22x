@@ -31,6 +31,10 @@ on:
         description: 'DEVICE_NAME'
         required: true
         default: 'a22x'
+      RELEASE_NAME:
+        description: 'RELEASE_NAME'
+        required: true
+        default: 'v1.00.0-alpha'
 
 env:
   TZ: Europe/Berlin
@@ -118,10 +122,9 @@ jobs:
       with:
         files: |
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/*.zip
-          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/recovery.img
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/recovery.tar
-        name: ${{ github.event.inputs.DEVICE_NAME }}-${{ github.run_id }}
-        tag_name: ${{ github.run_id }}
+        name: ${{ github.event.inputs.RELEASE_NAME }}
+        tag_name: ${{ github.event.inputs.RELEASE_NAME }}
         body: Recovery for ${{ github.event.inputs.DEVICE_NAME }}
       env:
         GITHUB_TOKEN: ${{ secrets.work }}
